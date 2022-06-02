@@ -45,7 +45,7 @@ export default class App extends Vue {
 
   @Watch('selectedItems')
   changeSelectedItem() {
-    this.isAllSelected = this.items.length == this.selectedItems.length;
+    this.isAllSelected = this.items.length === this.selectedItems.length;
   }
 
   changeAllSelected() {
